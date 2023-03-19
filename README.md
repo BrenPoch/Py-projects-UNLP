@@ -1,7 +1,7 @@
 # Seminario de lenguaje - PYTHON
-Resolución de ejercicio para la asignatura Seminario de Lenguaje.
+Resolución de ejercicios para la asignatura Seminario de Lenguaje.
 
-Carrera: Analista Programador Universitario
+Carrera: Analista Programador Universitario.
 
 Universidad: Universidad Nacional de La Plata (UNLP).
 
