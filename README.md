@@ -2,6 +2,7 @@
 Resolución de ejercicio para la asignatura Seminario de Lenguaje.
 
 Carrera: Analista Programador Universitario
+
 Universidad: Universidad Nacional de La Plata (UNLP).
 
 
