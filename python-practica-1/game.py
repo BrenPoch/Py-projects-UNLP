@@ -29,8 +29,16 @@ for i in range(0, times):
     result = float(input("resultado: "))
 
     # Se evalua si el resultado del usuario fue correcto o incorrecto
-    correct_result = float(eval(f"{number_1} {operator} {number_2}"))
-
+    match operator:
+        case "+":
+            correct_result = number_1 + number_2
+        case "-":
+            correct_result = number_1 - number_2
+        case "*":
+            correct_result = number_1 * number_2
+        case "/":
+            correct_result = number_1 / number_2
+    
     if result == correct_result:
         print("El resultado es correcto")
         correct_counter += 1
