@@ -19,10 +19,9 @@ def create_list_from_string(names_string):
     """This function receives a concatenation of quoted student names, separated by 
     commas, in the form of a single string. It returns a list of those names."""
 
-    names_list = names_string.split(",")
-    modified_names_list = list(
-        map(lambda name: name.strip("', \n"), names_list))
-    return modified_names_list
+    names_list = list(
+        map(lambda name: name.strip("', \n"), names_string.split(",")))
+    return names_list
 
 
 def generate_dictionary(names, marks_1, marks_2):
@@ -82,23 +81,23 @@ student_marks_dicc = generate_dictionary(
     marks_1,
     marks_2
 )
-print(f"Clause A resolution: \n {student_marks_dicc} \n")
+print(f"Clause A resolution: \n{student_marks_dicc}\n")
 
 # Clause B:
 student_marks_average = calculate_student_average(student_marks_dicc)
-print(f"Clause B resolution: \n {student_marks_average} \n")
+print(f"Clause B resolution: \n{student_marks_average}\n")
 
 # Clause C:
 students_general_average = calculate_general_average(student_marks_dicc)
 print(
-    f"Clause C resolution: \nThe general average of the class is: {students_general_average} \n")
+    f"Clause C resolution: \nThe general average of the class is: {students_general_average}\n")
 
 # Clause D:
 highest_average_student = highest_avg_student(student_marks_dicc)
 print(
-    f"Clause D resolution: \nThe student with the highest average is: {highest_average_student} \n")
+    f"Clause D resolution: \nThe student with the highest average is: {highest_average_student}\n")
 
 # Clause E:
 lowest_mark_student = lowest_mark_std(student_marks_dicc)
 print(
-    f"Clause E resolution: \nThe student with the lowest mark is: {lowest_mark_student} \n")
+    f"Clause E resolution: \nThe student with the lowest mark is: {lowest_mark_student}\n")
